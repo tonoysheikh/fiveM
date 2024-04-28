@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 :root {
-    --color-1: #1E3955;
+    --color-1: #1a1a1a;
     --color-2: #213F5F;
-    --color-3: #2C537B;
-    --color-4: #23405E;
+    --color-3: #1a1a1a;
+    --color-4: #424543;
     --color-5: #152638;
     --color-6: #121f2c;
     --color-7: rgb(28, 54, 82);
     --color-8: #2554cc;
-    --color-9: #6E707C;
+    --color-9: #1a1a1a;
     --color-10: #8f741b;
 }
 
@@ -37,10 +37,10 @@ input::-webkit-inner-spin-button {
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
-    width: 96.5%;
-    height: 96.5%;
-    left: 2.0%;
-    top: 1.5%;
+    width: 70%;
+    height: 70%;
+    left: 10%;
+    top: 10%;
     display: none;
 }
 
@@ -232,7 +232,7 @@ input::-webkit-inner-spin-button {
 }
 
 .nav-item {
-    background-color: var(--color-4);
+    background-color: var(--color-1);
     margin-top: 10px;
     padding: 10px;
     color: white;
