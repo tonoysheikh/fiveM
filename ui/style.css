@@ -37,10 +37,10 @@ input::-webkit-inner-spin-button {
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
-    width: 70%;
-    height: 70%;
-    left: 10%;
-    top: 10%;
+    width: 90%;
+    height: 90%;
+    left: 4%;
+    top: 4%;
     display: none;
 }
 
