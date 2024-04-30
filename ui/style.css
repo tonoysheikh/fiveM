@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 :root {
-    --color-1: #1a1a1a;
-    --color-2: #213F5F;
-    --color-3: #1a1a1a;
-    --color-4: #424543;
+    --color-1: #29313D;
+    --color-2: #213f5f;
+    --color-3: #29313D;
+    --color-4: #46454d;
     --color-5: #152638;
     --color-6: #121f2c;
     --color-7: rgb(28, 54, 82);
     --color-8: #2554cc;
-    --color-9: #1a1a1a;
-    --color-10: #8f741b;
+    --color-9: #29313D;
+    --color-10: #ebeff1;
+    --color-11: #0c694a;
 }
 
 body {
@@ -33,14 +34,16 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.dashboard-page-container  {
-    background-color: var(--color-9);
-    border-radius: 15px;
-    position: absolute; 
+.dashboard-page-container {
+    background: radial-gradient(circle, rgb(55, 54, 63) 20%, rgb(61, 60, 69) 50%, rgb(37, 37, 42) 80%);
+    border: 10px solid #1A1A13;
+    border-radius: 8px;
+    position: absolute;
     width: 90%;
     height: 80%;
     left: 4%;
-    top: 6%;
+    top: 8%;
+    opacity: 0.9;
     display: none;
 }
 
@@ -212,36 +215,53 @@ input::-webkit-inner-spin-button {
 }
 
 .main-container {
-    border-top: 5px solid var(--color-3);
     width: 100%;
-    height: 86%;
+    height: 90%;
     position: absolute;
     display: flex;
     bottom: 0;
 }
+.sidebar{
+    width: 200px;
+    height: 100%;
+    padding: 15px 0px;
+    position: fixed;
+}
+  
+.sidebar h4{
+    color: #fff;
+    text-transform: lowercase;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+.sidebar h4 img{
+    height: 65px;
+    width: 95px;
+  }
 
 .nav-menu {
-    background-color: var(--color-1);
-    border-right: 5px solid var(--color-3);
     min-width: 22.5vh;
     height: 100%;
     display: flex;
     flex-direction: column;
     user-select: none;
     border-bottom-left-radius: 15px;
+    margin-left: 50px;
 }
 
 .nav-item {
-    background-color: var(--color-1);
     margin-top: 10px;
     padding: 10px;
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bolder;
 }
 
 .nav-item:hover {
-    background-color: var(--color-3);
+    border: 1px solid #0c694a !important;
+    color: #0c694a !important;
+
 }
 
 .active-nav {
@@ -249,8 +269,6 @@ input::-webkit-inner-spin-button {
 }
 
 .warrants-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
     display: flex;
     flex-direction: column;
     height: 80.7vh;
@@ -260,7 +278,7 @@ input::-webkit-inner-spin-button {
 }
 
 .warrants-title {
-    background-color: var(--color-4);
+    background-color: #46454d;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -388,8 +406,6 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -402,7 +418,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-title {
-    background-color: var(--color-4);
+    background-color: #46454d;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -429,7 +445,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-item {
-    background-color: var(--color-5);
+    background-color: #46454d;
     width: 45vh;
     /* min-height: 7.7vh; */
     /* height: 7.7vh; */
@@ -440,7 +456,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-item:hover {
-    background-color: var(--color-3);
+    background-color: var(--color-10);
 }
 
 .bulletin-item-title {
@@ -500,11 +516,9 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .dispatch-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
     display: flex;
     flex-direction: column;
-    height: 81.1vh;
+    height: 70.6vh;
     width: 50vh;
     margin-top: 10px;
     margin-left: 10px;
@@ -566,7 +580,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .calls-title {
-    background-color: var(--color-3);
+    background-color: #46454d;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -589,7 +603,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 #bcso-count {
-background-color: #cc7e25;;
+background-color: #cc7e25;
 }
 
 #sasp-count {
@@ -735,21 +749,22 @@ background-color: #2589cc;
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: auto;
-    height: 100%;
+    height: 700px;
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width : 95%;
 }
 
 .active-calls-item {
     height: fit-content;
-    background-color: var(--color-5);
+    background-color: var(--color-1);
     display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
 
 .active-call-inner-container {
+    background-color: #46454d !important;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -757,7 +772,7 @@ background-color: #2589cc;
 }
 
 .red-call {
-    background-color: #381515;
+    background-color: #46454d;
 }
 
 .call-item-top {
@@ -770,7 +785,7 @@ background-color: #2589cc;
 }
 
 .call-number {
-    background-color: #950909;
+    background-color: #46454d !important;
     color: white;
     font-size: 15px;
     font-weight: bolder;
@@ -785,7 +800,7 @@ background-color: #2589cc;
 }
 
 .call-code {
-    background-color: #097C95;
+    background-color: #46454d !important;;
     color: white;
     font-size: 15px;
     font-weight: bolder;
@@ -800,6 +815,7 @@ background-color: #2589cc;
 }
 
 .call-title {
+    background-color: #46454d !important;
     color: white;
     font-size: 20px;
     font-weight: bolder;
@@ -820,7 +836,7 @@ background-color: #2589cc;
     font-size: 15px;
     font-weight: bolder;
     color: white;
-    background-color: var(--color-3);
+    background-color: #46454d !important;;
     padding: 5px;
     padding-left: 12.5px;
     padding-right: 12.5px;
@@ -828,6 +844,7 @@ background-color: #2589cc;
 }
 
 .call-item-bottom {
+    background-color: #46454d !important;
     height: fit-content;
     width: 100%;
     display: flex;
@@ -2663,7 +2680,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bulletin-add-btn {
-    background-color: var(--color-4);
+    background-color: #46454d;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -3670,7 +3687,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 #home-reports-container {
-    height: 50%;
+    height: 93%;
 }
 
 #home-warrants-container {
