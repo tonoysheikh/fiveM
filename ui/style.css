@@ -39,12 +39,14 @@ input::-webkit-inner-spin-button {
     border: 10px solid #1A1A13;
     border-radius: 8px;
     position: absolute;
-    width: 90%;
-    height: 80%;
-    left: 4%;
-    top: 8%;
+    width: 80%;
+    height: 90%;
+    left: 8%;
+    top: 5%;
     opacity: 0.9;
     display: none;
+    margin-left: 20px;
+
 }
 
 .badge-logo {
@@ -226,6 +228,9 @@ input::-webkit-inner-spin-button {
     height: 100%;
     padding: 15px 0px;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
 }
   
 .sidebar h4{
@@ -271,24 +276,24 @@ input::-webkit-inner-spin-button {
 .warrants-container {
     display: flex;
     flex-direction: column;
-    height: 80.7vh;
     width: 50vh;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: -82px;
 }
 
 .warrants-title {
     background-color: #46454d;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bolder;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: left;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 0px;
-    width: 95%;
+    width: 30vh;
     align-items: center;
     user-select: none;
 }
@@ -464,6 +469,13 @@ input::-webkit-inner-spin-button {
     margin-left: 5px;
     font-size: 20px;
     text-align: left;
+}
+
+.config{
+    margin-top: 50px;
+}
+.nav-bot{
+    margin-top: 7px;
 }
 
 span.bulletin-item-title {
@@ -3691,7 +3703,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 #home-warrants-container {
-    height: 50%;
+    height: 100%;
 }
 
 .dispatch-comms-container {

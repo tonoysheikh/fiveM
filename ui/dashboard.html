@@ -120,39 +120,51 @@
         <div class="loader"></div>
         <div class="main-container">
             <div class="nav-menu">
-                <div class="nav-item"><span class="fas fa-home" style="padding-right: 10px;"></span>Dashboard</div>
-                <div class="nav-item"><span class="fas fa-user" style="padding-right: 10px;"></span>Profiles</div>
-                <div class="nav-item incidents-nav-item"><span class="fas fa-address-card" style="padding-right: 10px;"></span>Incidents</div>
-                <div class="nav-item"><span class="fa-solid fa-blog" style="padding-right: 10px;"></span>Reports</div>
-                <div class="nav-item map-nav-item"><span class="fas fa-project-diagram" style="padding-right: 10px;"></span>Map</div>
-                <div class="nav-item bolo-nav-item"><span class="fas fa-map-pin" style="padding-right: 10px;"></span>BOLOs</div>
-                <div class="nav-item"><span class="fas fa-address-book" style="padding-right: 10px;"></span>Roster</div>
-                <div class="nav-item"><span class="fas fa-map-pin" style="padding-right: 10px;"></span>SOPs</div>
+                <div class="nav-item">Dashboard</div>
+                <div class="nav-item">Profiles</div>
+                <div class="nav-item incidents-nav-item">Incidents</div>
+                <div class="nav-item">Reports</div>
+                <div class="nav-item map-nav-item">Map</div>
+                <div class="nav-item bolo-nav-item">BOLOs</div>
+                <div class="nav-item">Roster</div>
+                <div class="nav-item">SOPs</div>
                 <div class="nav-item dmv-nav-item">DMV</div>
-                <div class="nav-item weapons-nav-item" data-page=".weapons-page-container"><span class="fa-solid fa-shield-halved" style="padding-right: 10px;"></span>Weapons</div>
-                <div class="nav-item cams-nav-item"><span class="fa-solid fa-camera" style="padding-right: 10px;"></span>Cameras</div>
-                <div class="nav-item"><span class="fas fa-map-pin" style="padding-right: 10px;"></span>Staff Logs</div>
+                <div class="nav-item weapons-nav-item" data-page=".weapons-page-container">Weapons</div>
+                <div class="nav-item cams-nav-item">Cameras</div>
+                <div class="nav-item">Staff Logs</div>
             </div>
         </div>
     </div><span class="fa-solid fa-blog" style="padding-right: 10px;"></span>
     <div class="dashboard-page-container close-all">
         <div class="sidebar">
-            <h4><img src="./img/logo.png" alt="logo"></h4>
+            <div class="logo">
+                <h4><img src="./img/logo.png" alt="logo"></h4>
+            </div>
+            <div class="name">
+                <button class="player-name">DEV</button>
+                <button class="point">350</button>
+            </div>
+            
         </div>
         <div class="main-container">
             <div class="nav-menu">
-                <div class="nav-item active-nav" data-page=".dashboard-page-container"> <span class="fas fa-home" style="padding-right: 10px;"></span>Dashboard</div>
+                <div class="nav-item active-nav" data-page=".dashboard-page-container"><span class="fas fa-home" style="padding-right: 10px;"></span>Dashboard</div>
                 <div class="nav-item" data-page=".profile-page-container"><span class="fas fa-user" style="padding-right: 10px;"></span>Profiles</div>
                 <div class="nav-item incidents-nav-item" data-page=".incidents-page-container"><span class="fas fa-address-card" style="padding-right: 10px;"></span>Incidents</div>
-                <div class="nav-item" data-page=".reports-page-container"><span class="fa-solid fa-blog" style="padding-right: 10px;"></span>Reports</div>
-                <div class="nav-item map-nav-item" data-page=".map-page-container"><span class="fas fa-project-diagram" style="padding-right: 10px;"></span>Map</div>
-                <div class="nav-item bolo-nav-item" data-page=".bolos-page-container"><span class="fas fa-address-book" style="padding-right: 10px;"></span>BOLOs</div>
-                <div class="nav-item penalcode-nav-item" data-page=".penalcode-page-container"><span class="fas fa-address-book" style="padding-right: 10px;"></span>Roster</div>
-                <div class="nav-item sop-nav-item" data-page=".sop-page-container"><span class="fas fa-map-pin" style="padding-right: 10px;"></span>SOPs</div>
+                <div class="nav-item" data-page=".reports-page-container"><span class="fas fa-map-pin" style="padding-right: 10px;"></span>Reports</div>
+                <!--<div class="nav-item map-nav-item" data-page=".map-page-container">Map</div>-->
+                <!--<div class="nav-item bolo-nav-item" data-page=".bolos-page-container"><span class="fas fa-map-pin" style="padding-right: 10px;"></span>BOLOs</div>-->
+                <div class="nav-item penalcode-nav-item" data-page=".penalcode-page-container"><span class="fas fa-map-pin" style="padding-right: 10px;"></span>Roster</div>
+                <!--<div class="nav-item sop-nav-item" data-page=".sop-page-container">SOPs</div>-->
                 <div class="nav-item dmv-nav-item" data-page=".dmv-page-container"><span class="fa-solid fa-blog" style="padding-right: 10px;"></span>DMV</div>
                 <div class="nav-item weapons-nav-item" data-page=".weapons-page-container"><span class="fa-solid fa-shield-halved" style="padding-right: 10px;"></span>Weapons</div>
-                <div class="nav-item cams-nav-item" data-page=".cams-page-container"><span class="fa-solid fa-camera" style="padding-right: 10px;"></span>Cameras</div>
-                <div class="nav-item" data-page=".stafflogs-page-container"><span class="fas fa-map-pin" style="padding-right: 10px;"></span>Staff Logs</div>
+                <!--<div class="nav-item cams-nav-item" data-page=".cams-page-container">Cameras</div>
+                <div class="nav-item" data-page=".stafflogs-page-container">Staff Logs</div>-->
+                <div class="nav-item config" >Config</div>
+                <div class="nav-bot">Current Date :</div>
+                <div class="date">Loading...</div>
+                <div class="nav-bot">Current Time :</div>
+                <div class="time">00:00</div>
             </div>
             <div style="display: flex; flex-direction: column;">
                 
@@ -175,7 +187,7 @@
             <div style="display: flex; flex-direction: column;">
                 <div class="bulletin-container">
                     <div style="display: flex; align-items: center;">
-                        <div class="bulletin-title">Bulletin Board</div>
+                        <div class="bulletin-title">Announcement</div>
                         <div class="bulletin-add-btn fas fa-plus"></div>
                     </div>
                     <div class="bulletin-items-continer"> </div>
@@ -196,17 +208,16 @@
     </div>
     <div class="profile-page-container close-all">
         <div class="header">
-            <img src="img/sasp_badge.webp" class="badge-logo">
+            
             <div class="header-left">
-                <div class="header-title" style="color: #caa95d; font-weight: bold; font-size: 18px;">SAN ANDREAS STATE POLICE</div>
-                <div style="color: white; font-weight: lighter; font-size: 16px;">Mobile Database Terminal</div>
+                <div><img src="./img/logo.png" class="badge-logo"></div>
             </div>
             <div class="header-middle">
                 <div class="date">Loading...</div>
                 <div class="time">00:00</div>
             </div>
             <div class="header-right">
-                <div style="color: white; font-weight: lighter; font-size: 22px;" class="name-shit">Welcome, Loading...
+                <div class="name-shit"><button>Welcome, Loading...</button>
                 </div>
                 <div style="color: lightgray; font-size: 15px;"><span class="fas fa-map-pin header-pin"></span><span class="header-location"></span></div>
             </div>
