@@ -472,7 +472,14 @@ input::-webkit-inner-spin-button {
 }
 
 .config{
-    margin-top: 50px;
+    margin-top: 70px;
+}
+.nav-bot {
+    margin-top: 6px;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
 }
 .nav-bot{
     margin-top: 7px;
